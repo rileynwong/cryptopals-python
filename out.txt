@@ -1,0 +1,662 @@
+trying dec:  33
+hex_val:  21
+xor_bytes: 
+[ 61  32  48  33  62  32  32  33  39  59  35 106 114 114 113  40  57  61]
+xor_hex_result:  3d2030213e202021273b236a72727128393d
+ascii result:  = 0!>  !';#jrrq(9=
+
+trying dec:  34
+hex_val:  22
+xor_bytes: 
+[ 62  35  51  34  61  35  35  34  36  56  32 105 113 113 114  43  58  62]
+xor_hex_result:  3e2333223d232322243820697171722b3a3e
+ascii result:  >#3"=##"$8 iqqr+:>
+
+trying dec:  35
+hex_val:  23
+xor_bytes: 
+[ 63  34  50  35  60  34  34  35  37  57  33 104 112 112 115  42  59  63]
+xor_hex_result:  3f2232233c222223253921687070732a3b3f
+ascii result:  ?"2#<""#%9!hpps*;?
+
+trying dec:  36
+hex_val:  24
+xor_bytes: 
+[ 56  37  53  36  59  37  37  36  34  62  38 111 119 119 116  45  60  56]
+xor_hex_result:  382535243b252524223e266f7777742d3c38
+ascii result:  8%5$;%%$">&owwt-<8
+
+trying dec:  37
+hex_val:  25
+xor_bytes: 
+[ 57  36  52  37  58  36  36  37  35  63  39 110 118 118 117  44  61  57]
+xor_hex_result:  392434253a242425233f276e7676752c3d39
+ascii result:  9$4%:$$%#?'nvvu,=9
+
+trying dec:  38
+hex_val:  26
+xor_bytes: 
+[ 58  39  55  38  57  39  39  38  32  60  36 109 117 117 118  47  62  58]
+xor_hex_result:  3a27372639272726203c246d7575762f3e3a
+ascii result:  :'7&9''& <$muuv/>:
+
+trying dec:  39
+hex_val:  27
+xor_bytes: 
+[ 59  38  54  39  56  38  38  39  33  61  37 108 116 116 119  46  63  59]
+xor_hex_result:  3b26362738262627213d256c7474772e3f3b
+ascii result:  ;&6'8&&'!=%lttw.?;
+
+trying dec:  40
+hex_val:  28
+xor_bytes: 
+[ 52  41  57  40  55  41  41  40  46  50  42  99 123 123 120  33  48  52]
+xor_hex_result:  34293928372929282e322a637b7b78213034
+ascii result:  4)9(7))(.2*c{{x!04
+
+trying dec:  41
+hex_val:  29
+xor_bytes: 
+[ 53  40  56  41  54  40  40  41  47  51  43  98 122 122 121  32  49  53]
+xor_hex_result:  35283829362828292f332b627a7a79203135
+ascii result:  5(8)6(()/3+bzzy 15
+
+trying dec:  42
+hex_val:  2a
+xor_bytes: 
+[ 54  43  59  42  53  43  43  42  44  48  40  97 121 121 122  35  50  54]
+xor_hex_result:  362b3b2a352b2b2a2c30286179797a233236
+ascii result:  6+;*5++*,0(ayyz#26
+
+trying dec:  43
+hex_val:  2b
+xor_bytes: 
+[ 55  42  58  43  52  42  42  43  45  49  41  96 120 120 123  34  51  55]
+xor_hex_result:  372a3a2b342a2a2b2d31296078787b223337
+ascii result:  7*:+4**+-1)`xx{"37
+
+trying dec:  44
+hex_val:  2c
+xor_bytes: 
+[ 48  45  61  44  51  45  45  44  42  54  46 103 127 127 124  37  52  48]
+xor_hex_result:  302d3d2c332d2d2c2a362e677f7f7c253430
+ascii result:  0-=,3--,*6.g|%40
+
+trying dec:  45
+hex_val:  2d
+xor_bytes: 
+[ 49  44  60  45  50  44  44  45  43  55  47 102 126 126 125  36  53  49]
+xor_hex_result:  312c3c2d322c2c2d2b372f667e7e7d243531
+ascii result:  1,<-2,,-+7/f~~}$51
+
+trying dec:  46
+hex_val:  2e
+xor_bytes: 
+[ 50  47  63  46  49  47  47  46  40  52  44 101 125 125 126  39  54  50]
+xor_hex_result:  322f3f2e312f2f2e28342c657d7d7e273632
+ascii result:  2/?.1//.(4,e}}~'62
+
+trying dec:  47
+hex_val:  2f
+xor_bytes: 
+[ 51  46  62  47  48  46  46  47  41  53  45 100 124 124 127  38  55  51]
+xor_hex_result:  332e3e2f302e2e2f29352d647c7c7f263733
+ascii result:  3.>/0../)5-d||&73
+
+trying dec:  48
+hex_val:  30
+xor_bytes: 
+[ 44  49  33  48  47  49  49  48  54  42  50 123  99  99  96  57  40  44]
+xor_hex_result:  2c3121302f313130362a327b63636039282c
+ascii result:  ,1!0/1106*2{cc`9(,
+
+trying dec:  49
+hex_val:  31
+xor_bytes: 
+[ 45  48  32  49  46  48  48  49  55  43  51 122  98  98  97  56  41  45]
+xor_hex_result:  2d3020312e303031372b337a62626138292d
+ascii result:  -0 1.0017+3zbba8)-
+
+trying dec:  50
+hex_val:  32
+xor_bytes: 
+[ 46  51  35  50  45  51  51  50  52  40  48 121  97  97  98  59  42  46]
+xor_hex_result:  2e3323322d333332342830796161623b2a2e
+ascii result:  .3#2-3324(0yaab;*.
+
+trying dec:  51
+hex_val:  33
+xor_bytes: 
+[ 47  50  34  51  44  50  50  51  53  41  49 120  96  96  99  58  43  47]
+xor_hex_result:  2f3222332c323233352931786060633a2b2f
+ascii result:  /2"3,2235)1x``c:+/
+
+trying dec:  52
+hex_val:  34
+xor_bytes: 
+[ 40  53  37  52  43  53  53  52  50  46  54 127 103 103 100  61  44  40]
+xor_hex_result:  283525342b353534322e367f6767643d2c28
+ascii result:  (5%4+5542.6ggd=,(
+
+trying dec:  53
+hex_val:  35
+xor_bytes: 
+[ 41  52  36  53  42  52  52  53  51  47  55 126 102 102 101  60  45  41]
+xor_hex_result:  293424352a343435332f377e6666653c2d29
+ascii result:  )4$5*4453/7~ffe<-)
+
+trying dec:  54
+hex_val:  36
+xor_bytes: 
+[ 42  55  39  54  41  55  55  54  48  44  52 125 101 101 102  63  46  42]
+xor_hex_result:  2a37273629373736302c347d6565663f2e2a
+ascii result:  *7'6)7760,4}eef?.*
+
+trying dec:  55
+hex_val:  37
+xor_bytes: 
+[ 43  54  38  55  40  54  54  55  49  45  53 124 100 100 103  62  47  43]
+xor_hex_result:  2b36263728363637312d357c6464673e2f2b
+ascii result:  +6&7(6671-5|ddg>/+
+
+trying dec:  56
+hex_val:  38
+xor_bytes: 
+[ 36  57  41  56  39  57  57  56  62  34  58 115 107 107 104  49  32  36]
+xor_hex_result:  24392938273939383e223a736b6b68312024
+ascii result:  $9)8'998>":skkh1 $
+
+trying dec:  57
+hex_val:  39
+xor_bytes: 
+[ 37  56  40  57  38  56  56  57  63  35  59 114 106 106 105  48  33  37]
+xor_hex_result:  25382839263838393f233b726a6a69302125
+ascii result:  %8(9&889?#;rjji0!%
+
+trying dec:  58
+hex_val:  3a
+xor_bytes: 
+[ 38  59  43  58  37  59  59  58  60  32  56 113 105 105 106  51  34  38]
+xor_hex_result:  263b2b3a253b3b3a3c20387169696a332226
+ascii result:  &;+:%;;:< 8qiij3"&
+
+trying dec:  59
+hex_val:  3b
+xor_bytes: 
+[ 39  58  42  59  36  58  58  59  61  33  57 112 104 104 107  50  35  39]
+xor_hex_result:  273a2a3b243a3a3b3d21397068686b322327
+ascii result:  ':*;$::;=!9phhk2#'
+
+trying dec:  60
+hex_val:  3c
+xor_bytes: 
+[ 32  61  45  60  35  61  61  60  58  38  62 119 111 111 108  53  36  32]
+xor_hex_result:  203d2d3c233d3d3c3a263e776f6f6c352420
+ascii result:   =-<#==<:&>wool5$ 
+
+trying dec:  61
+hex_val:  3d
+xor_bytes: 
+[ 33  60  44  61  34  60  60  61  59  39  63 118 110 110 109  52  37  33]
+xor_hex_result:  213c2c3d223c3c3d3b273f766e6e6d342521
+ascii result:  !<,="<<=;'?vnnm4%!
+
+trying dec:  62
+hex_val:  3e
+xor_bytes: 
+[ 34  63  47  62  33  63  63  62  56  36  60 117 109 109 110  55  38  34]
+xor_hex_result:  223f2f3e213f3f3e38243c756d6d6e372622
+ascii result:  "?/>!??>8$<ummn7&"
+
+trying dec:  63
+hex_val:  3f
+xor_bytes: 
+[ 35  62  46  63  32  62  62  63  57  37  61 116 108 108 111  54  39  35]
+xor_hex_result:  233e2e3f203e3e3f39253d746c6c6f362723
+ascii result:  #>.? >>?9%=tllo6'#
+
+trying dec:  64
+hex_val:  40
+xor_bytes: 
+[92 65 81 64 95 65 65 64 70 90 66 11 19 19 16 73 88 92]
+xor_hex_result:  5c4151405f414140465a420b13131049585c
+ascii result:  \AQ@_AA@FZBIX\
+
+trying dec:  65
+hex_val:  41
+xor_bytes: 
+[93 64 80 65 94 64 64 65 71 91 67 10 18 18 17 72 89 93]
+xor_hex_result:  5d4050415e404041475b430a12121148595d
+ascii result:  ]@PA^@@AG[C
+HY]
+
+trying dec:  66
+hex_val:  42
+xor_bytes: 
+[94 67 83 66 93 67 67 66 68 88 64  9 17 17 18 75 90 94]
+xor_hex_result:  5e4353425d434342445840091111124b5a5e
+ascii result:  ^CSB]CCBDX@	KZ^
+
+trying dec:  67
+hex_val:  43
+xor_bytes: 
+[95 66 82 67 92 66 66 67 69 89 65  8 16 16 19 74 91 95]
+xor_hex_result:  5f4252435c424243455941081010134a5b5f
+ascii result:  _BRC\BBCEYAJ[_
+
+trying dec:  68
+hex_val:  44
+xor_bytes: 
+[88 69 85 68 91 69 69 68 66 94 70 15 23 23 20 77 92 88]
+xor_hex_result:  584555445b454544425e460f1717144d5c58
+ascii result:  XEUD[EEDB^FM\X
+
+trying dec:  69
+hex_val:  45
+xor_bytes: 
+[89 68 84 69 90 68 68 69 67 95 71 14 22 22 21 76 93 89]
+xor_hex_result:  594454455a444445435f470e1616154c5d59
+ascii result:  YDTEZDDEC_GL]Y
+
+trying dec:  70
+hex_val:  46
+xor_bytes: 
+[90 71 87 70 89 71 71 70 64 92 68 13 21 21 22 79 94 90]
+xor_hex_result:  5a47574659474746405c440d1515164f5e5a
+ascii result:  ZGWFYGGF@\DO^Z
+
+trying dec:  71
+hex_val:  47
+xor_bytes: 
+[91 70 86 71 88 70 70 71 65 93 69 12 20 20 23 78 95 91]
+xor_hex_result:  5b46564758464647415d450c1414174e5f5b
+ascii result:  [FVGXFFGA]EN_[
+
+trying dec:  72
+hex_val:  48
+xor_bytes: 
+[84 73 89 72 87 73 73 72 78 82 74  3 27 27 24 65 80 84]
+xor_hex_result:  54495948574949484e524a031b1b18415054
+ascii result:  TIYHWIIHNRJAPT
+
+trying dec:  73
+hex_val:  49
+xor_bytes: 
+[85 72 88 73 86 72 72 73 79 83 75  2 26 26 25 64 81 85]
+xor_hex_result:  55485849564848494f534b021a1a19405155
+ascii result:  UHXIVHHIOSK@QU
+
+trying dec:  74
+hex_val:  4a
+xor_bytes: 
+[86 75 91 74 85 75 75 74 76 80 72  1 25 25 26 67 82 86]
+xor_hex_result:  564b5b4a554b4b4a4c50480119191a435256
+ascii result:  VK[JUKKJLPHCRV
+
+trying dec:  75
+hex_val:  4b
+xor_bytes: 
+[87 74 90 75 84 74 74 75 77 81 73  0 24 24 27 66 83 87]
+xor_hex_result:  574a5a4b544a4a4b4d51490018181b425357
+ascii result:  WJZKTJJKMQI BSW
+
+trying dec:  76
+hex_val:  4c
+xor_bytes: 
+[80 77 93 76 83 77 77 76 74 86 78  7 31 31 28 69 84 80]
+xor_hex_result:  504d5d4c534d4d4c4a564e071f1f1c455450
+ascii result:  PM]LSMMLJVNETP
+
+trying dec:  77
+hex_val:  4d
+xor_bytes: 
+[81 76 92 77 82 76 76 77 75 87 79  6 30 30 29 68 85 81]
+xor_hex_result:  514c5c4d524c4c4d4b574f061e1e1d445551
+ascii result:  QL\MRLLMKWODUQ
+
+trying dec:  78
+hex_val:  4e
+xor_bytes: 
+[82 79 95 78 81 79 79 78 72 84 76  5 29 29 30 71 86 82]
+xor_hex_result:  524f5f4e514f4f4e48544c051d1d1e475652
+ascii result:  RO_NQOONHTLGVR
+
+trying dec:  79
+hex_val:  4f
+xor_bytes: 
+[83 78 94 79 80 78 78 79 73 85 77  4 28 28 31 70 87 83]
+xor_hex_result:  534e5e4f504e4e4f49554d041c1c1f465753
+ascii result:  SN^OPNNOIUMFWS
+
+trying dec:  80
+hex_val:  50
+xor_bytes: 
+[76 81 65 80 79 81 81 80 86 74 82 27  3  3  0 89 72 76]
+xor_hex_result:  4c5141504f515150564a521b03030059484c
+ascii result:  LQAPOQQPVJR YHL
+
+trying dec:  81
+hex_val:  51
+xor_bytes: 
+[77 80 64 81 78 80 80 81 87 75 83 26  2  2  1 88 73 77]
+xor_hex_result:  4d5040514e505051574b531a02020158494d
+ascii result:  MP@QNPPQWKSXIM
+
+trying dec:  82
+hex_val:  52
+xor_bytes: 
+[78 83 67 82 77 83 83 82 84 72 80 25  1  1  2 91 74 78]
+xor_hex_result:  4e5343524d535352544850190101025b4a4e
+ascii result:  NSCRMSSRTHP[JN
+
+trying dec:  83
+hex_val:  53
+xor_bytes: 
+[79 82 66 83 76 82 82 83 85 73 81 24  0  0  3 90 75 79]
+xor_hex_result:  4f5242534c525253554951180000035a4b4f
+ascii result:  ORBSLRRSUIQ  ZKO
+
+trying dec:  84
+hex_val:  54
+xor_bytes: 
+[72 85 69 84 75 85 85 84 82 78 86 31  7  7  4 93 76 72]
+xor_hex_result:  485545544b555554524e561f0707045d4c48
+ascii result:  HUETKUUTRNV]LH
+
+trying dec:  85
+hex_val:  55
+xor_bytes: 
+[73 84 68 85 74 84 84 85 83 79 87 30  6  6  5 92 77 73]
+xor_hex_result:  495444554a545455534f571e0606055c4d49
+ascii result:  ITDUJTTUSOW\MI
+
+trying dec:  86
+hex_val:  56
+xor_bytes: 
+[74 87 71 86 73 87 87 86 80 76 84 29  5  5  6 95 78 74]
+xor_hex_result:  4a57475649575756504c541d0505065f4e4a
+ascii result:  JWGVIWWVPLT_NJ
+
+trying dec:  87
+hex_val:  57
+xor_bytes: 
+[75 86 70 87 72 86 86 87 81 77 85 28  4  4  7 94 79 75]
+xor_hex_result:  4b56465748565657514d551c0404075e4f4b
+ascii result:  KVFWHVVWQMU^OK
+
+trying dec:  88
+hex_val:  58
+xor_bytes: 
+[68 89 73 88 71 89 89 88 94 66 90 19 11 11  8 81 64 68]
+xor_hex_result:  44594958475959585e425a130b0b08514044
+ascii result:  DYIXGYYX^BZQ@D
+
+trying dec:  89
+hex_val:  59
+xor_bytes: 
+[69 88 72 89 70 88 88 89 95 67 91 18 10 10  9 80 65 69]
+xor_hex_result:  45584859465858595f435b120a0a09504145
+ascii result:  EXHYFXXY_C[
+
+	PAE
+
+trying dec:  90
+hex_val:  5a
+xor_bytes: 
+[70 91 75 90 69 91 91 90 92 64 88 17  9  9 10 83 66 70]
+xor_hex_result:  465b4b5a455b5b5a5c40581109090a534246
+ascii result:  F[KZE[[Z\@X		
+SBF
+
+trying dec:  91
+hex_val:  5b
+xor_bytes: 
+[71 90 74 91 68 90 90 91 93 65 89 16  8  8 11 82 67 71]
+xor_hex_result:  475a4a5b445a5a5b5d41591008080b524347
+ascii result:  GZJ[DZZ[]AYRCG
+
+trying dec:  92
+hex_val:  5c
+xor_bytes: 
+[64 93 77 92 67 93 93 92 90 70 94 23 15 15 12 85 68 64]
+xor_hex_result:  405d4d5c435d5d5c5a465e170f0f0c554440
+ascii result:  @]M\C]]\ZF^UD@
+
+trying dec:  93
+hex_val:  5d
+xor_bytes: 
+[65 92 76 93 66 92 92 93 91 71 95 22 14 14 13 84 69 65]
+xor_hex_result:  415c4c5d425c5c5d5b475f160e0e0d544541
+ascii result:  A\L]B\\][G_TEA
+
+trying dec:  94
+hex_val:  5e
+xor_bytes: 
+[66 95 79 94 65 95 95 94 88 68 92 21 13 13 14 87 70 66]
+xor_hex_result:  425f4f5e415f5f5e58445c150d0d0e574642
+ascii result:  B_O^A__^XD\WFB
+
+trying dec:  95
+hex_val:  5f
+xor_bytes: 
+[67 94 78 95 64 94 94 95 89 69 93 20 12 12 15 86 71 67]
+xor_hex_result:  435e4e5f405e5e5f59455d140c0c0f564743
+ascii result:  C^N_@^^_YE]VGC
+
+trying dec:  96
+hex_val:  60
+xor_bytes: 
+[124  97 113  96 127  97  97  96 102 122  98  43  51  51  48 105 120 124]
+xor_hex_result:  7c6171607f616160667a622b33333069787c
+ascii result:  |aq`aa`fzb+330ix|
+
+trying dec:  97
+hex_val:  61
+xor_bytes: 
+[125  96 112  97 126  96  96  97 103 123  99  42  50  50  49 104 121 125]
+xor_hex_result:  7d6070617e606061677b632a32323168797d
+ascii result:  }`pa~``ag{c*221hy}
+
+trying dec:  98
+hex_val:  62
+xor_bytes: 
+[126  99 115  98 125  99  99  98 100 120  96  41  49  49  50 107 122 126]
+xor_hex_result:  7e6373627d636362647860293131326b7a7e
+ascii result:  ~csb}ccbdx`)112kz~
+
+trying dec:  99
+hex_val:  63
+xor_bytes: 
+[127  98 114  99 124  98  98  99 101 121  97  40  48  48  51 106 123 127]
+xor_hex_result:  7f6272637c626263657961283030336a7b7f
+ascii result:  brc|bbceya(003j{
+
+trying dec:  100
+hex_val:  64
+xor_bytes: 
+[120 101 117 100 123 101 101 100  98 126 102  47  55  55  52 109 124 120]
+xor_hex_result:  786575647b656564627e662f3737346d7c78
+ascii result:  xeud{eedb~f/774m|x
+
+trying dec:  101
+hex_val:  65
+xor_bytes: 
+[121 100 116 101 122 100 100 101  99 127 103  46  54  54  53 108 125 121]
+xor_hex_result:  796474657a646465637f672e3636356c7d79
+ascii result:  ydtezddecg.665l}y
+
+trying dec:  102
+hex_val:  66
+xor_bytes: 
+[122 103 119 102 121 103 103 102  96 124 100  45  53  53  54 111 126 122]
+xor_hex_result:  7a67776679676766607c642d3535366f7e7a
+ascii result:  zgwfyggf`|d-556o~z
+
+trying dec:  103
+hex_val:  67
+xor_bytes: 
+[123 102 118 103 120 102 102 103  97 125 101  44  52  52  55 110 127 123]
+xor_hex_result:  7b66766778666667617d652c3434376e7f7b
+ascii result:  {fvgxffga}e,447n{
+
+trying dec:  104
+hex_val:  68
+xor_bytes: 
+[116 105 121 104 119 105 105 104 110 114 106  35  59  59  56  97 112 116]
+xor_hex_result:  74697968776969686e726a233b3b38617074
+ascii result:  tiyhwiihnrj#;;8apt
+
+trying dec:  105
+hex_val:  69
+xor_bytes: 
+[117 104 120 105 118 104 104 105 111 115 107  34  58  58  57  96 113 117]
+xor_hex_result:  75687869766868696f736b223a3a39607175
+ascii result:  uhxivhhiosk"::9`qu
+
+trying dec:  106
+hex_val:  6a
+xor_bytes: 
+[118 107 123 106 117 107 107 106 108 112 104  33  57  57  58  99 114 118]
+xor_hex_result:  766b7b6a756b6b6a6c70682139393a637276
+ascii result:  vk{jukkjlph!99:crv
+
+trying dec:  107
+hex_val:  6b
+xor_bytes: 
+[119 106 122 107 116 106 106 107 109 113 105  32  56  56  59  98 115 119]
+xor_hex_result:  776a7a6b746a6a6b6d71692038383b627377
+ascii result:  wjzktjjkmqi 88;bsw
+
+trying dec:  108
+hex_val:  6c
+xor_bytes: 
+[112 109 125 108 115 109 109 108 106 118 110  39  63  63  60 101 116 112]
+xor_hex_result:  706d7d6c736d6d6c6a766e273f3f3c657470
+ascii result:  pm}lsmmljvn'??<etp
+
+trying dec:  109
+hex_val:  6d
+xor_bytes: 
+[113 108 124 109 114 108 108 109 107 119 111  38  62  62  61 100 117 113]
+xor_hex_result:  716c7c6d726c6c6d6b776f263e3e3d647571
+ascii result:  ql|mrllmkwo&>>=duq
+
+trying dec:  110
+hex_val:  6e
+xor_bytes: 
+[114 111 127 110 113 111 111 110 104 116 108  37  61  61  62 103 118 114]
+xor_hex_result:  726f7f6e716f6f6e68746c253d3d3e677672
+ascii result:  ronqoonhtl%==>gvr
+
+trying dec:  111
+hex_val:  6f
+xor_bytes: 
+[115 110 126 111 112 110 110 111 105 117 109  36  60  60  63 102 119 115]
+xor_hex_result:  736e7e6f706e6e6f69756d243c3c3f667773
+ascii result:  sn~opnnoium$<<?fws
+
+trying dec:  112
+hex_val:  70
+xor_bytes: 
+[108 113  97 112 111 113 113 112 118 106 114  59  35  35  32 121 104 108]
+xor_hex_result:  6c7161706f717170766a723b23232079686c
+ascii result:  lqapoqqpvjr;## yhl
+
+trying dec:  113
+hex_val:  71
+xor_bytes: 
+[109 112  96 113 110 112 112 113 119 107 115  58  34  34  33 120 105 109]
+xor_hex_result:  6d7060716e707071776b733a22222178696d
+ascii result:  mp`qnppqwks:""!xim
+
+trying dec:  114
+hex_val:  72
+xor_bytes: 
+[110 115  99 114 109 115 115 114 116 104 112  57  33  33  34 123 106 110]
+xor_hex_result:  6e7363726d737372746870392121227b6a6e
+ascii result:  nscrmssrthp9!!"{jn
+
+trying dec:  115
+hex_val:  73
+xor_bytes: 
+[111 114  98 115 108 114 114 115 117 105 113  56  32  32  35 122 107 111]
+xor_hex_result:  6f7262736c727273756971382020237a6b6f
+ascii result:  orbslrrsuiq8  #zko
+
+trying dec:  116
+hex_val:  74
+xor_bytes: 
+[104 117 101 116 107 117 117 116 114 110 118  63  39  39  36 125 108 104]
+xor_hex_result:  687565746b757574726e763f2727247d6c68
+ascii result:  huetkuutrnv?''$}lh
+
+trying dec:  117
+hex_val:  75
+xor_bytes: 
+[105 116 100 117 106 116 116 117 115 111 119  62  38  38  37 124 109 105]
+xor_hex_result:  697464756a747475736f773e2626257c6d69
+ascii result:  itdujttusow>&&%|mi
+
+trying dec:  118
+hex_val:  76
+xor_bytes: 
+[106 119 103 118 105 119 119 118 112 108 116  61  37  37  38 127 110 106]
+xor_hex_result:  6a77677669777776706c743d2525267f6e6a
+ascii result:  jwgviwwvplt=%%&nj
+
+trying dec:  119
+hex_val:  77
+xor_bytes: 
+[107 118 102 119 104 118 118 119 113 109 117  60  36  36  39 126 111 107]
+xor_hex_result:  6b76667768767677716d753c2424277e6f6b
+ascii result:  kvfwhvvwqmu<$$'~ok
+
+trying dec:  120
+hex_val:  78
+xor_bytes: 
+[100 121 105 120 103 121 121 120 126  98 122  51  43  43  40 113  96 100]
+xor_hex_result:  64796978677979787e627a332b2b28716064
+ascii result:  dyixgyyx~bz3++(q`d
+
+trying dec:  121
+hex_val:  79
+xor_bytes: 
+[101 120 104 121 102 120 120 121 127  99 123  50  42  42  41 112  97 101]
+xor_hex_result:  65786879667878797f637b322a2a29706165
+ascii result:  exhyfxxyc{2**)pae
+
+trying dec:  122
+hex_val:  7a
+xor_bytes: 
+[102 123 107 122 101 123 123 122 124  96 120  49  41  41  42 115  98 102]
+xor_hex_result:  667b6b7a657b7b7a7c60783129292a736266
+ascii result:  f{kze{{z|`x1))*sbf
+
+trying dec:  123
+hex_val:  7b
+xor_bytes: 
+[103 122 106 123 100 122 122 123 125  97 121  48  40  40  43 114  99 103]
+xor_hex_result:  677a6a7b647a7a7b7d61793028282b726367
+ascii result:  gzj{dzz{}ay0((+rcg
+
+trying dec:  124
+hex_val:  7c
+xor_bytes: 
+[ 96 125 109 124  99 125 125 124 122 102 126  55  47  47  44 117 100  96]
+xor_hex_result:  607d6d7c637d7d7c7a667e372f2f2c756460
+ascii result:  `}m|c}}|zf~7//,ud`
+
+trying dec:  125
+hex_val:  7d
+xor_bytes: 
+[ 97 124 108 125  98 124 124 125 123 103 127  54  46  46  45 116 101  97]
+xor_hex_result:  617c6c7d627c7c7d7b677f362e2e2d746561
+ascii result:  a|l}b||}{g6..-tea
+
+trying dec:  126
+hex_val:  7e
+xor_bytes: 
+[ 98 127 111 126  97 127 127 126 120 100 124  53  45  45  46 119 102  98]
+xor_hex_result:  627f6f7e617f7f7e78647c352d2d2e776662
+ascii result:  bo~a~xd|5--.wfb
+
