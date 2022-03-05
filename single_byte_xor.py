@@ -1,8 +1,12 @@
 from itertools import repeat
 from collections import defaultdict
 from math import inf
+from string import printable
 
 
+"""
+Frequency table source: http://millikeys.sourceforge.net/freqanalysis.html
+"""
 ASCII_FREQUENCIES = {
   ' ': 18.74,
   'E': 9.60,
@@ -88,34 +92,56 @@ def character_frequencies(input):
     return freqs
 
 
-def iterate_ascii():
-    buffer_1 = bytes.fromhex('1b37373331363f78151b7f2b783431333d78397828372d363c78373e783a393b3736')
+def iterate_ascii(hex_input):
+    buffer = bytes.fromhex(hex_input)
 
     best_result = None
     best_dec = None
     score_min = inf
     # Iterate through decimal set of possible ASCII
-    for decimal in range(32, 127):
-        print('trying dec: ', str(decimal))
+    for decimal in range(0, 127):
+         # print('trying dec: ', str(decimal))
 
         # Convert decimal to formatted hex
-        ascii_byte_repeated = bytearray(repeat(decimal, len(buffer_1)))
+        ascii_byte_repeated = bytearray(repeat(decimal, len(buffer)))
 
         # Try hex value as single_hex key
-        xor_result = byte_xor(buffer_1, ascii_byte_repeated)
-        print('xor_result: ', xor_result)
+        xor_result = byte_xor(buffer, ascii_byte_repeated)
+        # print('xor_result: ', xor_result)
 
         score = sum_of_squared_residuals(defaultdict(lambda: 0.0, ASCII_FREQUENCIES), character_frequencies(xor_result))
-        print('score: ', score)
+        # print('score: ', score)
         if score < score_min:
             score_min = score
             best_result = xor_result
             best_dec = decimal
-        print()
 
     return (best_dec, score_min, best_result)
 
 
+def iterate_file():
+    filename = '4.txt'
+
+    with open(filename, 'r', encoding='utf-8') as f:
+        iterated = [iterate_ascii(line) for line in f]
+        iterated.sort(key=lambda tuple: tuple[1])
+
+        for result in iterated:
+            bytes = result[2]
+            try:
+                bs = set(bytes.decode('ascii'))
+                if bs.issubset(printable):
+                        print(result)
+                        
+            except:
+                pass
+
+
 if __name__ == "__main__":
 
-    print(iterate_ascii())
+    iterate_file()
+
+    buffer = '7b5a4215415d544115415d5015455447414c155c46155f4058455c5b523f'
+    # buffer = '1b37373331363f78151b7f2b783431333d78397828372d363c78373e783a393b3736'
+    # print(iterate_ascii(buffer))
+
