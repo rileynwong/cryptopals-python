@@ -71,7 +71,10 @@ def sum_of_squared_residuals(f1, f2):
 
 
 def byte_xor(ba1, ba2):
-    """ XOR two byte strings """
+    """
+    XOR two byte strings.
+    Truncates to the shorter length.
+    """
     return bytes([a ^ b for a, b in zip(ba1, ba2)])
 
 
@@ -132,7 +135,7 @@ def iterate_file():
                 bs = set(bytes.decode('ascii'))
                 if bs.issubset(printable):
                         print(result)
-                        
+
             except:
                 pass
 
