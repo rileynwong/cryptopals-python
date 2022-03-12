@@ -123,7 +123,7 @@ def iterate_ascii(hex_input):
 
 
 def iterate_file():
-    filename = '4.txt'
+    filename = 'files/4.txt'
 
     with open(filename, 'r', encoding='utf-8') as f:
         iterated = [iterate_ascii(line) for line in f]
