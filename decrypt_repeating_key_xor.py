@@ -18,7 +18,24 @@ def hamming_distance(s1, s2):
 
 def decrypt_xor(encrypted_msg):
 
+    ### Find candidate keysize
     for keysize in range(2, 41):
+
+        # Find edit distance between first two keysized blocks
+
+        # Optional: try different strategies
+
+        # Normalize result (divide by keysize)
+
+    ### Set up ciphertext for decryption
+
+        # Break up ciphertext into keysized blocks
+
+        # Transpose blocks and apply single-character XOR
+
+        # Combine single-character XOR keys
+
+
         pass
 
 
