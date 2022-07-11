@@ -21,6 +21,12 @@ def hamming_distance(s1, s2):
 
 
 def iterate_file():
+    """
+    Read in encrypted base64 file and return its contents as bytes.
+
+    Note: Python prints printable hex characters as is, and unprintable hex
+    characters with a preceeding \x and two characters.
+    """
     # File in base64
     filename = 'files/6.txt'
 
@@ -37,12 +43,17 @@ def iterate_file():
 ### DECRYPT
 
 def decrypt_xor(encrypted_msg):
-    data_bytes = iterate_file()
 
     ### Find candidate keysize
     for keysize in range(2, 41):
 
         # Find edit distance between first two keysized blocks
+        ## Python slices on byte objects
+        block_1 = encrypted_msg[:keysize]
+        block_2 = encrypted_msg[keysize:keysize+keysize]
+
+        print('block_1: ', block_1)
+        print('block_2: ', block_2)
 
 
         # Optional: try different strategies
@@ -66,10 +77,15 @@ if __name__ == "__main__":
     s1 = 'this is a test'
     s2 = 'wokka wokka!!!'
     hamming_test = hamming_distance(s1, s2)
-    print('Testing hammit distance:')
+    print('Testing hamming distance:')
     print('Expected: 37')
     print('Actual  :', hamming_test)
 
     print()
-    print('Test iterate file')
-    iterate_file()
+    print('Test iterate_file')
+    encrypted_msg = iterate_file()
+
+    print()
+    print('Test decrypt_xor')
+    decrypt_xor(encrypted_msg)
+
