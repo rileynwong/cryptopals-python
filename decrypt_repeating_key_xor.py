@@ -1,3 +1,7 @@
+import base64
+
+
+### HELPERS
 
 def hamming_distance(s1, s2):
     """
@@ -16,12 +20,30 @@ def hamming_distance(s1, s2):
     return d
 
 
+def iterate_file():
+    # File in base64
+    filename = 'files/6.txt'
+
+    # Decode base64 into bytes
+    with open(filename, 'r', encoding='utf-8') as f:
+        data = f.read()
+
+        # TODO: answer question: do we do anything with newlines?
+        data_bytes = base64.b64decode(data)
+        print(data_bytes)
+        return data_bytes
+
+
+### DECRYPT
+
 def decrypt_xor(encrypted_msg):
+    data_bytes = iterate_file()
 
     ### Find candidate keysize
     for keysize in range(2, 41):
 
         # Find edit distance between first two keysized blocks
+
 
         # Optional: try different strategies
 
@@ -39,17 +61,15 @@ def decrypt_xor(encrypted_msg):
         pass
 
 
-def iterate_file():
-    filename = '6.txt'
-
-    with open(filename, 'r', encoding='utf-8') as f:
-        for line in f:
-            pass
-
-
 if __name__ == "__main__":
 
     s1 = 'this is a test'
     s2 = 'wokka wokka!!!'
     hamming_test = hamming_distance(s1, s2)
-    print(hamming_test)
+    print('Testing hammit distance:')
+    print('Expected: 37')
+    print('Actual  :', hamming_test)
+
+    print()
+    print('Test iterate file')
+    iterate_file()
