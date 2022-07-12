@@ -129,6 +129,13 @@ def iterate_file():
         iterated = [iterate_ascii(line) for line in f]
         iterated.sort(key=lambda tuple: tuple[1])
 
+        print('First couple of candidates: ')
+        for i in range(10):
+            print(iterated[i])
+
+
+        print()
+        print('Filter through printable messages:')
         for result in iterated:
             bytes = result[2]
             try:

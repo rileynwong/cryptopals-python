@@ -38,6 +38,12 @@ def iterate_file():
         return data_bytes
 
 
+def transpose(l):
+    """ Given a list of lists, return the transposition. """
+    transposed = list(map(list, zip(*l)))
+    return transposed
+
+
 ### DECRYPT
 
 def find_candidate_keysize(encrypted_msg):
@@ -53,14 +59,14 @@ def find_candidate_keysize(encrypted_msg):
         block_1 = encrypted_msg[:keysize]
         block_2 = encrypted_msg[keysize:keysize+keysize]
 
-        print('block_1: ', block_1)
-        print('block_2: ', block_2)
+        # print('block_1: ', block_1)
+        # print('block_2: ', block_2)
 
         keysize_hamming_distance = hamming_distance(block_1, block_2)
 
         # Normalize result (divide by keysize)
         normalized_distance = keysize_hamming_distance / keysize
-        print(normalized_distance)
+        # print(normalized_distance)
 
         if normalized_distance < minimum_hamming_distance:
             minimum_hamming_distance = normalized_distance
@@ -79,16 +85,24 @@ def find_candidate_keysize(encrypted_msg):
     return keysize_candidate_min
 
 
-def decrypt_xor(keysize):
+def decrypt_xor(encrypted_msg, keysize):
     print('Trying keysize: ', keysize)
+    blocks = []
 
-    ### Set up ciphertext for decryption
+    # Break up ciphertext into keysized blocks
+    blocks = [encrypted_msg[i:i + keysize] for i in range(0, len(encrypted_msg), keysize)]
 
-        # Break up ciphertext into keysized blocks
+    print(blocks)
 
-        # Transpose blocks and apply single-character XOR
+    # Transpose blocks and apply single-character XOR
+    # TODO: finish applying single-character XOR
+    transposed = transpose(blocks)
 
-        # Combine single-character XOR keys
+    key = ''
+    for transposed_block in transposed:
+        pass
+
+    # Combine single-character XOR keys
 
 
 
@@ -112,4 +126,4 @@ if __name__ == "__main__":
 
     print()
     print('Test decrypt_xor')
-    decrypt_xor(keysize)
+    decrypt_xor(encrypted_msg, keysize)
