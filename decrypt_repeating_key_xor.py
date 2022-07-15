@@ -1,6 +1,6 @@
 import base64, math
 
-from single_byte_xor import find_single_char_xor_candidate
+from single_byte_xor import find_single_char_xor_candidate, byte_xor
 
 
 ### HELPERS
@@ -87,7 +87,7 @@ def find_candidate_keysize(encrypted_msg):
     return keysize_candidate_min
 
 
-def decrypt_xor(encrypted_msg, keysize):
+def find_candidate_key(encrypted_msg, keysize):
     print('Trying keysize: ', keysize)
     blocks = []
 
@@ -119,9 +119,34 @@ def decrypt_xor(encrypted_msg, keysize):
 
     # Combine single-character XOR keys
     print('Key:')
-    print(bytearray(key, encoding='ascii'))
-    return key
+    bytearray_key = bytearray(key, encoding='ascii')
+    print(bytearray_key)
 
+    return bytearray_key
+
+
+def decrypt_xor(encrypted_msg, key):
+    """
+    Given an encrypted message and key, use xor and return decrypted message.
+
+    Break up encrypted message into key-sized blocks, apply XOR, append the
+    decrypted result.
+    """
+
+    decrypted_msg = bytearray()
+
+    keysize = len(key)
+    blocks = [encrypted_msg[i:i + keysize] for i in range(0, len(encrypted_msg), keysize)]
+
+    for encrypted_block in blocks:
+        # Apply xor on the key and block
+        print('encrypted_block: ', encrypted_block)
+        xor_result = byte_xor(encrypted_block, key)
+
+        decrypted_msg += xor_result
+
+
+    return decrypted_msg
 
 
 if __name__ == "__main__":
@@ -143,9 +168,14 @@ if __name__ == "__main__":
     keysize = find_candidate_keysize(encrypted_msg)
 
     print()
-    print('Test decrypt_xor')
-    key = decrypt_xor(encrypted_msg, keysize)
+    print('Test find_candidate_key')
+    key = find_candidate_key(encrypted_msg, keysize)
     print('Key: ', key)
 
     # Use key to decrypt input
+    print()
+    print('Test decrypt_xor')
+    decrypted_msg = decrypt_xor(encrypted_msg, key)
+    print(decrypted_msg)
+
 
