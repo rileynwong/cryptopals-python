@@ -95,9 +95,12 @@ def character_frequencies(input):
     return freqs
 
 
-def iterate_ascii(hex_input):
-    buffer = bytes.fromhex(hex_input)
-
+def find_single_char_xor_candidate(buffer):
+    """
+    Takes a bytestring as input.
+    Returns the most likely candidate character for a single character xor of the msg.
+    Uses similarity (lowest sum of squared residuals) to a set of ASCII character frequencies to score likelihood.
+    """
     best_result = None
     best_dec = None
     score_min = inf
@@ -105,11 +108,8 @@ def iterate_ascii(hex_input):
     for decimal in range(0, 127):
          # print('trying dec: ', str(decimal))
 
-        # Convert decimal to formatted hex
-        ascii_byte_repeated = bytearray(repeat(decimal, len(buffer)))
-
         # Try hex value as single_hex key
-        xor_result = byte_xor(buffer, ascii_byte_repeated)
+        xor_result = bytearray([decimal ^ char for char in buffer])
         # print('xor_result: ', xor_result)
 
         score = sum_of_squared_residuals(defaultdict(lambda: 0.0, ASCII_FREQUENCIES), character_frequencies(xor_result))
@@ -126,15 +126,15 @@ def iterate_file():
     filename = 'files/4.txt'
 
     with open(filename, 'r', encoding='utf-8') as f:
-        iterated = [iterate_ascii(line) for line in f]
-        iterated.sort(key=lambda tuple: tuple[1])
+        best_candidate_per_line = [find_single_char_xor_candidate(bytes.fromhex(line)) for line in f]
+        best_candidate_per_line.sort(key=lambda tuple: tuple[1])
 
-        for result in iterated:
-            bytes = result[2]
+        for candidate in best_candidate_per_line:
+            result = candidate[2]
             try:
-                bs = set(bytes.decode('ascii'))
+                bs = set(result.decode('ascii'))
                 if bs.issubset(printable):
-                        print(result)
+                        print(candidate)
 
             except:
                 pass
