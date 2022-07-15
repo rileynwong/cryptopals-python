@@ -1,5 +1,7 @@
 import base64, math
 
+from single_byte_xor import find_single_char_xor_candidate
+
 
 ### HELPERS
 
@@ -17,7 +19,7 @@ def hamming_distance(b1, b2):
     return d
 
 
-def iterate_file():
+def read_base64_file_as_bytes():
     """
     Read in encrypted base64 file and return its contents as bytes.
 
@@ -90,19 +92,35 @@ def decrypt_xor(encrypted_msg, keysize):
     blocks = []
 
     # Break up ciphertext into keysized blocks
-    blocks = [encrypted_msg[i:i + keysize] for i in range(0, len(encrypted_msg), keysize)]
+    blocks = [list(encrypted_msg[i:i + keysize]) for i in range(0, len(encrypted_msg), keysize)]
 
-    print(blocks)
+    print('Blocks length: ', len(blocks))
+    print('Blocks[5] length: ', len(blocks[5]))
+
+    # print(blocks)
+    # TODO: don't use this one HACK cryptographers hate!
+    # Drop blocks < keysize length
+    uniform_blocks = [block for block in blocks if len(block) == keysize]
 
     # Transpose blocks and apply single-character XOR
-    # TODO: finish applying single-character XOR
-    transposed = transpose(blocks)
+    transposed = transpose(uniform_blocks)
+    print('Transposed length: ', len(transposed))
 
     key = ''
     for transposed_block in transposed:
-        pass
+        result = find_single_char_xor_candidate(transposed_block)
+        print('Result for block: ')
+        print(result)
+        print()
+        candidate, score_min, best_result = result
+
+        key += chr(candidate)
+
 
     # Combine single-character XOR keys
+    print('Key:')
+    print(bytearray(key, encoding='ascii'))
+    return key
 
 
 
@@ -118,7 +136,7 @@ if __name__ == "__main__":
     print('Expected: 37')
     print('Actual  :', hamming_test)
 
-    encrypted_msg = iterate_file()
+    encrypted_msg = read_base64_file_as_bytes()
 
     print()
     print('Test find_candidate_keysize')
@@ -126,4 +144,8 @@ if __name__ == "__main__":
 
     print()
     print('Test decrypt_xor')
-    decrypt_xor(encrypted_msg, keysize)
+    key = decrypt_xor(encrypted_msg, keysize)
+    print('Key: ', key)
+
+    # Use key to decrypt input
+
